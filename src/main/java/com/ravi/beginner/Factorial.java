@@ -12,15 +12,18 @@ public class Factorial {
         int counter = sc.nextInt();
         while (counter >= 1) {
             final int facto = sc.nextInt();
-            System.out.println(getTheFactorial(facto));
+            System.out.println(getTheFactorialOfInt(BigInteger.valueOf(facto)));
             counter--;
         }
     }
 
-    private static int getTheFactorial(BigInteger facto) {
-        if (facto.equals(1)) {
-            return 1;
+
+    private static BigInteger getTheFactorialOfInt(BigInteger facto) {
+        BigInteger finalVal = BigInteger.valueOf(1);
+        for (BigInteger i = facto; i.compareTo(BigInteger.valueOf(0)) > 0; i = i.subtract(BigInteger.valueOf(1))) {
+            finalVal = finalVal.multiply(i);
         }
-        return facto * getTheFactorial(facto.subtract(new BigInteger(1l)));
+        return finalVal;
     }
+
 }
