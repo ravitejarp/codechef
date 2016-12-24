@@ -9,7 +9,8 @@ public class BinarySearch {
     public static void main(String[] args) {
         System.out.println(searchElement(12, searchArry, 0, searchArry.length - 1));
         System.out.println(searchElement(1, searchArry, 0, searchArry.length - 1));
-        System.out.print(searchElement(5, searchArry, 0, searchArry.length - 1));
+        System.out.println(searchElement(5, searchArry, 0, searchArry.length - 1));
+        System.out.print(searchElement(10, searchArry, 0, searchArry.length - 1));
     }
 
     private static int searchElement(int i, int[] searchArry, int start, int end) {
