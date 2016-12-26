@@ -1,4 +1,4 @@
-package com.ravi.learn.from.geeks;
+package com.ravi.learn.from.geeks.algorithms;
 
 import java.util.ArrayList;
 import java.util.List;

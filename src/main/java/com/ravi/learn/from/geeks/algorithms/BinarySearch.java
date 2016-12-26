@@ -1,4 +1,4 @@
-package com.ravi.learn.from.geeks;
+package com.ravi.learn.from.geeks.algorithms;
 
 /**
  * Created by ravra03 on 11/5/2016.
